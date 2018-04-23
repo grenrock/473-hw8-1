@@ -1,0 +1,13 @@
+<h2>List of Scientists</h2>
+
+<ul>
+  {{#each model as |person|}}
+    <li>{{person}}</li>
+    <li {{action "showPerson" person}}>{{person}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
+
+
+{{yield}}
